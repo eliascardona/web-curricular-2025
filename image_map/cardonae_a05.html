@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardona Rodríguez Elias Eduardo - LITC 6A</title>
+    <style>
+        .card {
+            display: grid;
+            width: 45%;
+            align-items: center;
+            grid-template-rows: 7% 13% 80%;
+            border-radius: .375rem;
+            box-shadow: rgba(10, 10, 10, 0.3) 0 2px 5px 0;
+        }
+    </style>
+</head>
+<body style="background-color: #fefefe;">
+    <h3>Cardona Rodríguez Elias Eduardo - LITC 6A</h3>
+    <h1>Etiqueta Image map - Mapa de imágenes</h1>
+    <main style="display: grid; width: 100%; place-items: center;">
+        <div class="card">
+            <div>
+                <p>Imagen que ilustra las delegaciones de la Ciudad de México</p>
+                <p>Los municipios señalados son</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Coyoacán</li>
+                    <li>Iztapalapa</li>
+                    <li>Xochimilco</li>
+                    <li>Tlalpan</li>
+                    <li>Milpa Alta</li>
+                </ul>
+                <p>Por favor, coloque el cursor sobre el nombre</p>
+            </div>
+            <div>
+                <img src="assets/img/CDMX.jpg" width="100%" height="auto" alt="Imagen de las delegaciones de la Ciudad de México" usemap="#cdmxmap">
+                <map name="cdmxmap">
+                    <area shape="circle" coords="315,320,30" alt="Coyoacan" href="coyoacan.html">
+                    <area shape="circle" coords="445,322,30" alt="Iztapalapa" href="iztapalapa.html">
+                    <area shape="circle" coords="415,425,30" alt="Xochimilco" href="xochimilco.html">
+                    <area shape="circle" coords="245,500,40" alt="Tlalpan" href="tlalpan.html">
+                    <area shape="circle" coords="445,570,80" alt="Milpa Alta" href="milpa-alta.html">
+                </map>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
