@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Inputs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        hr {
+            border-color: #000;
+            border-width: 2px;
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        button {
+            padding: 5px;
+        }
+
+        .output {
+            margin-top: 10px;
+            font-size: 14px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h4>Elias Eduardo Cardona Rodríguez  -  LITC 6°A  -  Desarrollo web 2025</h4>
+    <h2>Demostración de Inputs</h2>
+    <div class="container">
+        <label>Checkbox:</label>
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </form>
+
+        <span id="checkbox-status">No seleccionado</span>
+
+        <br>
+        <hr>
+
+        <label>Color:</label>
+        <input type="color" id="color-picker">
+        <span id="color-value">#000000</span>
+
+        <br>
+        <hr>
+
+        <label>Fecha:</label>
+        <input type="date" id="date-picker">
+        <span id="date-value"></span>
+
+        <br>
+        <hr>
+
+        <label>Fecha y Hora:</label>
+        <input type="datetime-local" id="datetime-picker">
+        <span id="datetime-value"></span>
+
+        <br>
+        <hr>
+
+        <label>Email:</label>
+        <input type="email" placeholder="correo@ejemplo.com">
+
+        <br>
+        <hr>
+
+        <label>Archivo:</label>
+        <input type="file" id="file-input">
+        <span id="file-name">Ningún archivo seleccionado</span>
+
+        <br>
+        <hr>
+
+        <span>input secreto</span>
+        <input type="hidden" id="hidden-input" value="Secreto">
+
+        <br>
+        <hr>
+
+        <label>cumpleaños mes y año:</label>
+        <input type="month" id="month-picker">
+        <span id="month-value"></span>
+
+        <br>
+        <hr>
+
+        <label>Número de 10 en 10:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+
+        <br>
+        <hr>
+
+        <label>Contraseña:</label>
+        <input type="password">
+
+        <br>
+        <hr>
+
+        <label>Radio:</label>
+
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form>
+
+        <br>
+        <hr>
+
+        <label>Range between 0 and 50:</label>
+        <input type="range" id="range-input" min="0" max="50">
+        <span id="range-value">50</span>
+
+        <br>
+        <hr>
+
+        <label>Reset:</label>
+        <form id="resetform">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <br>
+        <hr>
+
+        <label>Búsqueda:</label>
+        <input type="search" placeholder="Buscar...">
+
+        <br>
+        <hr>
+
+        <label>Enviar:</label>
+        <input type="submit" value="Enviar">
+
+        <form id="submitform">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <hr>
+
+        <label>Teléfono:</label>
+        <input type="tel" placeholder="+52 ..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <br>
+        <hr>
+
+        <label>Texto:</label>
+        <input type="text" placeholder="Escribe algo...">
+
+        <br>
+        <hr>
+
+        <label>Hora:</label>
+        <input type="time" id="time-picker">
+        <span id="time-value"></span>
+
+        <br>
+        <hr>
+
+        <label>add your homepage:</label>
+        <input type="url" placeholder="https://ejemplo.com">
+
+        <br>
+        <hr>
+
+        <label>select a week:</label>
+        <input type="week" id="week-picker">
+        <span id="week-value"></span>
+
+        <br>
+        <hr>
+
+        <label>Imagen (Botón tipo imagen):</label>
+        <input type="image" src="https://picsum.photos/200/100" alt="Botón de imagen" style="width: 50%;">
+
+        <br>
+        <hr>
+
+        <label>Botón:</label>
+        <input type="button" value="Click" onclick="alert('Botón presionado')">
+
+        <br>
+        <hr>
+
+        <span>fin de los inputs básicos en HTML</span>
+        <br>
+        <span>faltaría el manejo con select que igual es útil</span>
+
+    </div>
+
+    <script>
+        document.querySelector('#submitform').addEventListener('submit', function (e) {
+            e.preventDefault()
+            console.log('enviado')
+        })
+
+        document.querySelector('#resetform').addEventListener('submit', function (e) {
+            e.preventDefault()
+            console.log('enviado')
+        })
+
+        document.getElementById('checkbox').addEventListener('change', function () {
+            document.getElementById('checkbox-status').innerText = this.checked ? 'Seleccionado' : 'No seleccionado';
+        });
+
+        document.getElementById('color-picker').addEventListener('input', function () {
+            document.getElementById('color-value').innerText = this.value;
+        });
+
+        document.getElementById('date-picker').addEventListener('change', function () {
+            document.getElementById('date-value').innerText = this.value;
+        });
+
+        document.getElementById('datetime-picker').addEventListener('change', function () {
+            document.getElementById('datetime-value').innerText = this.value;
+        });
+
+        document.getElementById('file-input').addEventListener('change', function () {
+            document.getElementById('file-name').innerText = this.files.length ? this.files[0].name : 'Ningún archivo seleccionado';
+        });
+
+        document.getElementById('month-picker').addEventListener('change', function () {
+            document.getElementById('month-value').innerText = this.value;
+        });
+
+        document.getElementById('range-input').addEventListener('input', function () {
+            document.getElementById('range-value').innerText = this.value;
+        });
+
+        document.getElementById('time-picker').addEventListener('change', function () {
+            document.getElementById('time-value').innerText = this.value;
+        });
+
+        document.getElementById('week-picker').addEventListener('change', function () {
+            document.getElementById('week-value').innerText = this.value;
+        });
+    </script>
+
+</body>
+
+</html>
