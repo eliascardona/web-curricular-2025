@@ -4,35 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delegación de Tlalplan - Delegaciones CDMX</title>
+    <title>Delegación de Tlalpan - Delegaciones CDMX</title>
+    <link rel="stylesheet" href="assets/css/index.css">
     <style>
         body {
             margin: 0;
         }
+
         .grid {
             display: grid;
             width: 100%;
             height: 100vh;
             grid-template-columns: 20% 79%;
         }
+
         .sidebar {
             display: grid;
             width: 100%;
             height: 100%;
-            grid-template-rows: 70% 30%;
+            grid-template-rows: 45% 55%;
             padding-left: 3%;
             border-radius: .375rem;
             box-shadow: rgba(10, 10, 10, 0.3) 0 0 3px 0;
         }
+
         .main {
             display: grid;
             width: 100%;
         }
+
         .content {
             display: grid;
             width: 92%;
             justify-self: center;
-            grid-template-rows: 13% 87%;
+            grid-template-rows: .25fr .3fr .5fr 1fr;
             padding-top: 2rem;
         }
     </style>
@@ -42,12 +47,11 @@
     <div class="grid">
         <div class="sidebar">
             <div style="padding-top: 2.65rem;">
-                <h3>Características de Tlalplan</h3>
+                <h3>Características de Tlalpan</h3>
                 <ul>
-                    <li>Habitantes: x</li>
-                    <li>Extensión: x</li>
-                    <li>Fundado en: x</li>
-                    <li>Otro: x</li>
+                    <li>Habitantes: 699 928 hab.</li>
+                    <li>Extensión: 312 km²</li>
+                    <li>Estado: CDMX</li>
                 </ul>
             </div>
             <div>
@@ -66,13 +70,52 @@
         </div>
         <div class="main">
             <div class="content">
-                <h1>Tlalplan</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam a necessitatibus fuga officia ducimus voluptates dolor voluptate suscipit aliquam consequuntur molestias, dolorum eum aliquid, dolorem atque, architecto quae repellendus? Modi, repellat in reiciendis autem consequatur ipsum repellendus placeat impedit omnis commodi, reprehenderit maxime odio accusamus totam fugit cumque eveniet nihil assumenda natus ex! Eum porro sequi reprehenderit voluptas dicta, fuga eius consequuntur modi aut, soluta autem, est magni rem! Aperiam unde nemo impedit, dolorum aliquid sapiente nisi expedita eius necessitatibus, atque maiores harum fugit? Omnis quasi nostrum odit consectetur? Unde nihil obcaecati doloremque exercitationem excepturi. Neque, id provident. Quis exercitationem itaque soluta quas nam doloribus quidem consequatur et reprehenderit amet magni eaque sequi, deleniti officia aut a, perferendis vitae excepturi.
-                </p>
-                <img src="assets/img/tlalpan.jpg" alt="">
+                <h1>Tlalpan</h1>
+                <div style="font-size: 1.15em;">
+                    <p>
+                        Tlalpan es una alcaldía rica en historia y naturaleza en la Ciudad de México. Su nombre, que
+                        significa “en la tierra de las tierras,” refleja sus raíces prehispánicas y su importancia como
+                        punto de comercio en la época colonial. Su centro histórico, con edificios coloniales como el
+                        antiguo Palacio Municipal y la Parroquia de San Agustín, conserva el encanto de tiempos pasados.
+                        <br>
+                        <br>
+                        Además, Tlalpan cuenta con áreas naturales como el Bosque de Tlalpan y el Ajusco, que ofrecen
+                        espacios verdes ideales para actividades al aire libre. Con su combinación de patrimonio
+                        histórico y belleza natural, Tlalpan es un lugar único para quienes buscan conocer la riqueza
+                        cultural y natural de la ciudad.
+                    </p>
+                </div>
+                <div style="display: grid; width: 75%; justify-self: center; justify-items: center;">
+                    <img src="assets/img/tlalpan.jpg" width="70%" height="auto" alt="Tlalpan">
+                </div>
+                <div style="font-size: 1.15em;">
+                    <p>
+                        En 1927 se inaugura el Cine Tlalpan, ocupando para este fin el teatro de la correccional de
+                        menores de San Fernando, el 11 de noviembre es inaugurada la nueva carretera que comunicaría a
+                        la Ciudad de México con el Puerto de Acapulco, misma que facilitó la comunicación entre los
+                        pueblos de Tlalpan, en 1929 se inauguró la fábrica “Textiles Ajusco” (la cuál cerraría sus
+                        puertas en 1965) ocupando para su construcción el terreno conocido como “solar del Calvario”
+                        ubicado frente a la capilla del mismo nombre.
+                        <br>
+                        <br>
+                        En 1949 es inaugurada la nueva planta de la fábrica de la Compañía Industrial de Orizaba
+                        “CIDOSA” la cual dio origen a la colonia “AMSA”, lugar de residencia de los trabajadores de la
+                        fábrica, al año siguiente en 1950 el director de cine Luis Buñuel filma en Tlalpan varias
+                        escenas para su nueva película “Los Olvidados”, la cuál a pesar de la polémica que genero en ese
+                        entonces se convirtió en un gran éxito en todo el mundo.
+                        <br>
+                        <br>
+                        El 5 de febrero de 2018 al interior de la Universidad Pontificia ubicada en el centro de Tlalpan
+                        especialistas del Instituto Nacional de Antropología e Historia (INAH) descubrieron parte de una
+                        aldea prehispánica, cerámica, tumbas troncocónicas y restos óseos de una decena de personas
+                        pertenecientes a una aldea satélite de Cuicuilco de aproximadamente 2400 años de antigüedad.
+                        Actualmente Tlalpan cuenta actualmente con 699,928 (censo 2020), lo que la convierte en la
+                        cuarta alcaldía más poblada de la ciudad de México.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>

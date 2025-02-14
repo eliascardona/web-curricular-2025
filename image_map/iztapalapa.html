@@ -5,34 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delegación de Iztapalapa - Delegaciones CDMX</title>
+    <link rel="stylesheet" href="assets/css/index.css">
     <style>
         body {
             margin: 0;
         }
+
         .grid {
             display: grid;
             width: 100%;
             height: 100vh;
             grid-template-columns: 20% 79%;
         }
+
         .sidebar {
             display: grid;
             width: 100%;
-            height: 100%;
-            grid-template-rows: 70% 30%;
+            grid-template-rows: 45% 55%;
             padding-left: 3%;
             border-radius: .375rem;
             box-shadow: rgba(10, 10, 10, 0.3) 0 0 3px 0;
         }
+
         .main {
             display: grid;
             width: 100%;
         }
+
         .content {
             display: grid;
             width: 92%;
             justify-self: center;
-            grid-template-rows: 13% 87%;
+            grid-template-rows: .25fr .5fr .5fr 1fr;
             padding-top: 2rem;
         }
     </style>
@@ -44,10 +48,9 @@
             <div style="padding-top: 2.65rem;">
                 <h3>Características de Iztapalapa</h3>
                 <ul>
-                    <li>Habitantes: x</li>
-                    <li>Extensión: x</li>
-                    <li>Fundado en: x</li>
-                    <li>Otro: x</li>
+                    <li>Habitantes: 1 835 486 hab</li>
+                    <li>Extensión: 117 km²</li>
+                    <li>Estado: CDMX</li>
                 </ul>
             </div>
             <div>
@@ -67,12 +70,46 @@
         <div class="main">
             <div class="content">
                 <h1>Iztapalapa</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam a necessitatibus fuga officia ducimus voluptates dolor voluptate suscipit aliquam consequuntur molestias, dolorum eum aliquid, dolorem atque, architecto quae repellendus? Modi, repellat in reiciendis autem consequatur ipsum repellendus placeat impedit omnis commodi, reprehenderit maxime odio accusamus totam fugit cumque eveniet nihil assumenda natus ex! Eum porro sequi reprehenderit voluptas dicta, fuga eius consequuntur modi aut, soluta autem, est magni rem! Aperiam unde nemo impedit, dolorum aliquid sapiente nisi expedita eius necessitatibus, atque maiores harum fugit? Omnis quasi nostrum odit consectetur? Unde nihil obcaecati doloremque exercitationem excepturi. Neque, id provident. Quis exercitationem itaque soluta quas nam doloribus quidem consequatur et reprehenderit amet magni eaque sequi, deleniti officia aut a, perferendis vitae excepturi.
-                </p>
-                <img src="assets/img/iztapalapa.jpg" alt="">
+                <div style="font-size: 1.15em;">
+                    <p>
+                        Iztapalapa ('losas sobre el agua' en náhuatl) es una de las demarcaciones territoriales 
+                        de la Ciudad de México. Posee una superficie algo mayor a 116 km² y se localiza
+                        en el oriente de la capital de la República Mexicana, ocupando la porción sur del
+                        vaso del lago de Texcoco. En el censo de población y vivienda realizado por el INEGI en 2020
+                        registró una población de 1 835 486 habitantes, lo que la convierte en la segunda demarcación
+                        más poblada de todo el país, abajo de Tijuana.
+                        <br>
+                        <br>
+                        El nombre de esta demarcación se debe a la antigua ciudad de Iztapalapan, que significa “sobre
+                        la loza en el agua”, fundada por los culhuas entre la falda norte del cerro de la Estrella y la
+                        ribera del lago de Texcoco. La evidencia más antigua que se conoce de la presencia humana en
+                        Iztapalapa es el llamado Hombre de Aztahuacán, al que se le atribuye una antigüedad de 9400
+                        años.
+                    </p>
+                </div>
+                <div style="display: grid; width: 75%; justify-self: center; justify-items: center;">
+                    <img src="assets/img/iztapalapa.jpg" width="70%" height="auto" alt="Iztapalapa">
+                </div>
+                <div style="font-size: 1.15em;">
+                    <p>
+                        A lo largo de la historia precolombina, el territorio iztapalapense conoció el desarrollo
+                        de diversas comunidades sedentarias dedicadas a la agricultura. Durante el período Clásico
+                        mesoamericano siglo III-siglo VII d. C., se estableció un pueblo de cultura teotihuacana en el
+                        norte del cerro de la Estrella. Culhuacán, población fundada en el siglo VII, recibió una parte
+                        de la diáspora que inició con el declive de Teotihuacán. Durante los siguientes siglos,
+                        Culhuacán fue uno de los más importantes altépetl en el valle de México, tuvo un papel muy
+                        destacado en el desarrollo de la cultura tolteca y su casa gobernante dio a México-Tenochtitlan
+                        su primer tlatoani. En la época de la Conquista, Iztapalapa era gobernada por Cuitláhuac,
+                        hermano de Moctezuma Xocoyotzin. A la muerte de este, Cuitláhuac asumió el mando de los mexicas
+                        y logró derrotar a los españoles en la Noche Triste. Después de la derrota de
+                        México-Tenochtitlan, la antigua Iztapalapa fue destruida. Con la independencia de México,
+                        Iztapalapa vino a ser una de las municipalidades del Estado de México hasta la creación del
+                        Distrito Federal en 1824.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
