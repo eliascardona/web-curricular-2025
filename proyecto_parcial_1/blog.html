@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Cardona - Consultor de software - Article page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/audio.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerContainer">
+            <div class="logo">
+                eliascardona
+            </div>
+            <nav class="nav">
+                <a href="/">Inicio</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="/">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <a href="tel:+524921054240" class="btn primary">Contacto</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="back-link">
+            <a href="/">← Volver a todos los artículos</a>
+        </div>
+
+        <article class="blog-article">
+            <div class="badges">
+                <span class="badge">Desarrollo de Software</span>
+                <span class="badge">Crecimiento Profesional</span>
+            </div>
+
+            <h1 class="blog-title">Dominando el Código Limpio: Principios que Todo Desarrollador Debe Conocer</h1>
+
+            <div class="article-meta">
+                <span>📅 2 de marzo de 2024</span>
+                <span>⏳ 8 minutos de lectura</span>
+            </div>
+
+            <div class="featured-image">
+                <img src="https://via.placeholder.com/800x500" alt="Ejemplo de código limpio">
+            </div>
+
+            <div class="content">
+                <p><strong>El código limpio</strong> no es solo una cuestión de estética: se trata de crear software
+                    mantenible, eficiente y fiable.</p>
+
+                <h2>¿Por qué es importante el código limpio?</h2>
+                <p>El código debe ser fácil de leer y mantener. Robert C. Martin enfatiza que el código limpio debe
+                    contar una historia, no confundir al lector.</p>
+
+                <h3>1. Nombres significativos</h3>
+                <p>Usa nombres de variables y funciones que sean claros. Evita abreviaciones poco entendibles.</p>
+                <pre>
+                <code>
+                // Malas prácticas en nombres
+                const x = 5; 
+
+                // Mejores prácticas en nombres
+                const intentosMaximosDeInicioDeSesion = 5;
+                </code>
+                </pre>
+
+                <h3>2. Las funciones deben hacer una sola cosa</h3>
+                <p>Las funciones deben estar enfocadas en una única responsabilidad.</p>
+
+                <h3>3. Los comentarios son el último recurso</h3>
+                <p>Un buen código se documenta por sí solo. Usa comentarios solo cuando sea necesario.</p>
+
+                <h3>4. Manejo adecuado de errores</h3>
+                <p>No ignores los errores. Manejarlos correctamente ayuda a depurar y mejorar el código.</p>
+
+                <h2>Conclusión</h2>
+                <p>El código limpio no es opcional, es una responsabilidad profesional.</p>
+            </div>
+        </article>
+
+        <div class="author-bio">
+            <img src="./assets/img/instructor.jpg" alt="Elias Cardona">
+            <div>
+                <h3>Elias Cardona</h3>
+                <p>Consultor privado e ingeniero de software con de 5 años de experiencia.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="audio-player">
+        <audio id="audio" src="./assets/audio/sample.mp3"></audio>
+
+        <button id="play-pause" class="btn">
+            <span id="play-icon">▶</span>
+            <span id="pause-icon" style="display: none;">⏸</span>
+        </button>
+
+        <span id="current-time">0:00</span>
+
+        <input type="range" id="progress" value="0" min="0" step="1">
+
+        <span id="duration">0:00</span>
+
+        <button id="mute-unmute" class="btn">
+            <span id="volume-on">🔊</span>
+            <span id="volume-off" style="display: none;">🔇</span>
+        </button>
+
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Elias Cardona. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

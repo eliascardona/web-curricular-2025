@@ -1,0 +1,117 @@
+:root {
+    --main-blue: rgb(0, 204, 255)
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link-blue {
+    color: var(--main-blue);
+}
+
+.text-blue {
+	color: var(--main-blue)
+}
+
+.text-blue-dark {
+	color: #1b2caf;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(0, 204, 255, 0.4) 0 1px 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--main-blue);
+    transition: transform 0.3s ease-in-out;
+    z-index: 20;
+    color: #fefefe;
+    background-color: #1a1a1a;
+}
+
+.header.hide {
+    transform: translateY(-100%);
+}
+
+.header .headerContainer {
+    width: 80%;
+    place-self: center;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    font-size: 1.125em;
+    position: relative;
+    left: -4.5rem;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+.nav a.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn.primary {
+    background: #007bff;
+    color: white;
+}
+
+
+/* FOR TABLE */
+
+.node2 {
+    width: 94%;
+    display: grid;
+    place-items: center;
+}
+
+.child11 {
+    width: 50%;
+    background-color: #fcfcfc;
+}
+
+.child21 {
+    width: 98%;
+    background-color: #fcfcfc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+td {
+    vertical-align: middle;
+}
